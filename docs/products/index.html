@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Free Source Available Invoicing, Expenses &amp; Time-Tracking | Invoice Ninja</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="referrer" content="always">
+    <link rel="canonical" href="https://invoiceninja.github.io/docs/products">
+    <meta name="description" content="The leading free source available online invoicing app for freelancers &amp; businesses. Invoice, accept payments, track expenses, &amp; time-tasks">
+
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=3cb3bf8f72a583a9511a">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/agate.min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<nav class="py-4 sticky top-0 z-40 lg:z-50 w-full mx-auto bg-white border-b">
+    <div id="navigation-content" class="flex items-center justify-between px-4 md:px-0 md:mx-4 lg:px-4 xl:mx-auto max-w-8xl">
+        <a href="/" id="left-side-logo">
+            <img class="h-10"
+                 src="/assets/images/logo-rounded.png"
+                 alt="Invoice Ninja logo"/>
+        </a>
+        <section id="right-side-items" class="text-sm">
+            <div class="hidden md:hidden lg:block md:space-x-5">
+                <input type="text" placeholder="Quick search ..." id="topSearchBox"
+                       class="pb-1 border-b hover:border-ninja-blue focus:border-ninja-blue focus:outline-none">
+                <a href="/docs/getting-started" class="py-2 border-b border-transparent hover:border-ninja-blue">Documentation</a>
+                <a href="https://app.swaggerhub.com/apis/invoiceninja/invoiceninja" target="_blank"
+                   class="py-2 border-b border-transparent hover:border-ninja-blue">API Documentation</a>
+                <a target="_blank" href="https://invoicing.co" class="px-5 py-2 border rounded-full hover:border-ninja-blue">Go
+                    to app</a>
+            </div>
+            <div class="flex flex-col lg:hidden">
+                <button id="mobile-menu-toggle" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+    <div id="mobile-menu" class="hidden px-4 pt-4 flex flex-col">
+        <a href="/docs/getting-started"
+           class="py-2 border-b border-transparent hover:border-ninja-blue">Documentation</a>
+        <a href="https://app.swaggerhub.com/apis/invoiceninja/invoiceninja" target="_blank"
+           class="py-2 border-b border-transparent hover:border-ninja-blue">API Documentation</a>
+        <a href="https://invoicing.co" target="_blank"
+           class="py-2 border-b border-transparent hover:border-ninja-blue">Go to app</a>
+    </div>
+</nav>
+<body class="font-sans antialiased text-gray-900 bg-white ">
+        <div class="hidden top-0 absolute z-40 bg-white w-full h-screen" id="mobile-menu-overlay">
+       <div class="p-6 flex items-top justify-between">
+           <div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="/docs/getting-started">User guide</a>
+
+                       <div class="mt-2">
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/introduction">Introduction</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/clients">Clients</a>
+                                                          <a class="block hover:text-ninja-blue py-1 text-ninja-blue"
+                                  href="/docs/products">Products</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/invoices">Invoices</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/recurring-invoices">Recurring Invoices</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/payments">Payments</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/quotes">Quotes</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/credits">Credits</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/projects">Projects</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/tasks">Tasks</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/vendors">Vendors</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/expenses">Expenses</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/recurring-expenses">Recurring Expenses</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/reports">Reports</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/basic-settings">Basic Settings</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/advanced-settings">Advanced Settings</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/subscriptions">Subscriptions</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/custom-fields">PDF customization</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/troubleshooting">Troubleshooting</a>
+                                                  </div>
+                   </div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="/docs/developer-guide">Developer guide</a>
+
+                       <div class="mt-2">
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/api/authentication">Auth</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/api/clients">Clients</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/payment-gateways">Payment Gateways</a>
+                                                  </div>
+                   </div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="/docs/self-host-installation">Self host</a>
+
+                       <div class="mt-2">
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/self-host-installation">Installation</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/self-host-updating">Updating</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/env-variables">Env Variables</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/self-host-troubleshooting">Troubleshooting</a>
+                                                  </div>
+                   </div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="">Hosted</a>
+
+                       <div class="mt-2">
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/hosted-quickstart">Quick Start</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/hosted-activate">Activate</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/hosted-custom-domain">Custom Domain</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/hosted-migration">Hosted Migration</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/hosted-stripe">Stripe Integration</a>
+                                                  </div>
+                   </div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="/docs/migration">Migrating to V5</a>
+
+                       <div class="mt-2">
+                                                  </div>
+                   </div>
+                                  <div clasS="mb-8">
+                       <a class="block hover:text-ninja-blue font-semibold uppercase "
+                          href="">Legal</a>
+
+                       <div class="mt-2">
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/license">License</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/terms_of_service">Terms of Service</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/data_privacy">Data Privacy</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/self_hosting_data">Selfhost Data Privacy</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/self_hosting_terms">Selfhost Terms</a>
+                                                          <a class="block hover:text-ninja-blue py-1 "
+                                  href="/docs/legal/gdpr">GDPR</a>
+                                                  </div>
+                   </div>
+                          </div>
+           <div>
+                <button onclick="document.getElementById('mobile-menu-overlay').classList.add('hidden');">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+           </div>
+       </div>
+    </div>
+
+    <div class="max-w-12xl grid grid-cols-12 py-2 px-2 lg:mx-auto">
+        <div class="hidden space-y-6 md:block lg:col-span-2">
+            <div class="hidden lg:block fixed mt-2 h-full overflow-y-auto pb-32 pr-16 pl-4">
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="/docs/getting-started">User guide</a>
+
+                        <div class="mt-2">
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/introduction">Introduction</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/clients">Clients</a>
+                                                            <a class="block hover:text-ninja-blue py-1 text-ninja-blue"
+                                   href="/docs/products">Products</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/invoices">Invoices</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/recurring-invoices">Recurring Invoices</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/payments">Payments</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/quotes">Quotes</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/credits">Credits</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/projects">Projects</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/tasks">Tasks</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/vendors">Vendors</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/expenses">Expenses</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/recurring-expenses">Recurring Expenses</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/reports">Reports</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/basic-settings">Basic Settings</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/advanced-settings">Advanced Settings</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/subscriptions">Subscriptions</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/custom-fields">PDF customization</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/troubleshooting">Troubleshooting</a>
+                                                    </div>
+                    </div>
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="/docs/developer-guide">Developer guide</a>
+
+                        <div class="mt-2">
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/api/authentication">Auth</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/api/clients">Clients</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/payment-gateways">Payment Gateways</a>
+                                                    </div>
+                    </div>
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="/docs/self-host-installation">Self host</a>
+
+                        <div class="mt-2">
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/self-host-installation">Installation</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/self-host-updating">Updating</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/env-variables">Env Variables</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/self-host-troubleshooting">Troubleshooting</a>
+                                                    </div>
+                    </div>
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="">Hosted</a>
+
+                        <div class="mt-2">
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/hosted-quickstart">Quick Start</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/hosted-activate">Activate</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/hosted-custom-domain">Custom Domain</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/hosted-migration">Hosted Migration</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/hosted-stripe">Stripe Integration</a>
+                                                    </div>
+                    </div>
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="/docs/migration">Migrating to V5</a>
+
+                        <div class="mt-2">
+                                                    </div>
+                    </div>
+                                    <div clasS="mb-8">
+                        <a class="block hover:text-ninja-blue font-semibold uppercase "
+                           href="">Legal</a>
+
+                        <div class="mt-2">
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/license">License</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/terms_of_service">Terms of Service</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/data_privacy">Data Privacy</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/self_hosting_data">Selfhost Data Privacy</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/self_hosting_terms">Selfhost Terms</a>
+                                                            <a class="block hover:text-ninja-blue py-1 "
+                                   href="/docs/legal/gdpr">GDPR</a>
+                                                    </div>
+                    </div>
+                            </div>
+        </div> <!-- End of sidebar -->
+
+        <div class="col-span-12 md:col-span-8 prose mx-auto max-w-max" id="page-content">
+            <div class="block lg:hidden flex flex-col mb-4 lg:mb-0">
+                <button onclick="document.getElementById('mobile-menu-overlay').classList.remove('hidden');">&#8592; Documentation</button>
+            </div>
+
+            <h1>Products</h1>
+
+<h2>Creating Products</h2>
+
+<p>There several ways for a product to be created, including:</p>
+
+<ul>
+<li>Admin Portal > New Product</li>
+<li>Admin Portal > Settings > Import | Export > Import .CSV documents for batch product creation or imports.</li>
+<li>Manually entering new product information on a new line of an invoice or quote.  <strong>Note</strong> that when using this method, the product <em>quantity</em> used in the first invoice will be set as the <em>Default Quantity</em> for that product.</li>
+<li>As a developer you can create API calls to create, update, delete, export, or perform bulk actions on products, using API references from the Invoice Ninja <a href="https://app.swaggerhub.com/apis/invoiceninja/invoiceninja/">API Documentation</a>.  Templates for Integratomat and others have not yet been implemented.</li>
+</ul>
+
+<p>Products can also be used to represent services rendered.  For example, you could have a product entry for service calls, with a price set to your hourly rate, and use the product quantity to represent the billable hours.</p>
+
+<h2>Viewing Products</h2>
+
+<p>To view products from the Invoice Ninja admin portal, you must visit the Products module on the left hand navigation menu.  Alternatively, you can view and analyze your products list in an external application by exporting products as a .CSV file using the API, or the Export function under <em>Settings</em>.</p>
+
+<h3>Overview</h3>
+
+<p>The <em>Overview</em> pane presents a very simple layout, with the product price in large text at the top, followed by the product description underneath.</p>
+
+<h3>Documents</h3>
+
+<p>The <em>Documents</em> pane provides the ability to upload documents and view documents you have linked to the product.  These uploaded files are <em>only</em> accessible through the admin portal.  A useful way to employ the document uploads feature, is by posting product signage, or documents with thorough product descriptions or technical details.</p>
+
+<p><strong>Note</strong> that uploaded documents are saved in the "public/storage" directory in a folder structure using hashed folder names to match the product entry, so backup this directory along with your database to preserve your attached documents.</p>
+
+<h3>Functions</h3>
+
+<p>There are a few functions available from the product view mode that provide shortcuts to manipulating the product you are viewing.</p>
+
+<ul>
+<li><strong>Edit</strong> - The <em>Edit</em> button at the top right corner of the panel will allow you to edit the details of the product, such as the product name, description, price, and default quantity.</li>
+<li><strong>New Invoice</strong> - This button at the bottom of the panel will create a new invoice and take you to a <em>New Invoice</em> page, with the product you're viewing as a line item and the default quantity for that item already entered.</li>
+<li><strong>Clone</strong> - This button will take you to a <em>New Product</em> screen, with the exactly same product details as the product you are viewing, allowing you to easily clone your product, and make any edits you need to before saving it as a new product.</li>
+</ul>
+
+<h2>Editing a Product</h2>
+
+<p>There is only a few fields that apply to a product:</p>
+
+<ul>
+<li><strong>Product</strong> - This is the name of the product itself, which will appear on invoices.</li>
+<li><strong>Description</strong> - The product description, which will appear on invoices.  <strong>Note</strong> that PDF generation of invoices and quotes will process any HTML formatting you use here.  Furthermore, when <em>Enable Markdown</em> is turned on under <em>Settings</em> > <em>Account Management</em>, you will be able to enter markdown text into the product descriptions also, and it will appear formatted in your invoices, quotes, etc.</li>
+<li><strong>Price</strong> - The standard price of your product.</li>
+<li><strong>Default Quantity</strong> - The default quantity is used automatically when the product is added to an invoice or quote.</li>
+</ul>
+
+<p> <div class="flex justify-end">
+    <a class="text-blue-500 flex items-center" href="/docs/invoices">
+        <span>Invoices</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="p-0 mt-1 h-4" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="13 17 18 12 13 7"></polyline>
+            <polyline points="6 17 11 12 6 7"></polyline>
+        </svg>
+    </a>
+</div> </p>
+
+            <a href="https://github.com/invoiceninja/invoiceninja.github.io/blob/v5-rework/source/docs/products.md"
+               class="pt-4 border-t inline-flex items-center w-full block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-github">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span class="ml-2">Want to contribute? Edit this page on GitHub!</span>
+            </a>
+        </div> <!-- End of main content -->
+
+        <div class="hidden md:block col-span-2 p-4">
+            <div class="fixed overflow-y-auto pr-4 h-full pl-4 pb-32 text-sm" id="toc-container">
+                <!-- Placeholder for table of contents -->
+                <span class="text-sm uppercase block mb-3 text-ninja-blue">On this page</span>
+            </div>
+        </div>
+    </div>
+        <script src="/assets/build/js/main.js?id=1d7981b5d11ee9e9120a"></script>
+
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+            let mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                return mobileMenu.classList.remove('hidden');
+            }
+
+            return mobileMenu.classList.add('hidden');
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript">
+        docsearch({
+            apiKey: '4816218e8381d5a17beacd84823e9ea3',
+            indexName: 'invoiceninja',
+            inputSelector: '#topSearchBox',
+            debug: false
+        });
+    </script>
+</body>
+
+</html>
